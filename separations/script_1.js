@@ -3,7 +3,7 @@
 
 var thirdTable = new Vue({
   el: '#thirdTable',
-  data: {
+  data: {   
     rows: [
       { id: 1, name: "Chandler Bing", phone: '305-917-1301', profession: 'IT Manager', denn: 'denbhgr' },
       { id: 2, name: "Ross Geller", phone: '210-684-8953', profession: 'Paleontologist' },

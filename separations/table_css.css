@@ -1,4 +1,4 @@
-
+ 
 table {
   font-family: 'Open Sans', sans-serif;
   width: 750px;
@@ -30,4 +30,4 @@ table td:last-child {
 table tbody tr:nth-child(2n) td {
   background: #D4D8F9;
 }
-
+ 
