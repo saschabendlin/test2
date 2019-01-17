@@ -9,7 +9,11 @@
   </head>
 <body>
 
+<<<<<<< HEAD
     <div id="app" class="flat-table">
+=======
+    <div id="app"  >
+>>>>>>> 5b2e53df2f2a7f3905cee4a6818e98d97c17e614
       <h1>{{ message }}</h1>
     </div>
     
@@ -17,12 +21,12 @@
     <table id="thirdTable">
       <thead>
         <tr>
-          <th v-for="col in columns" v-on:click="sortTable(col)">{{col}}</th>
+          <th c v-for="col in columns" v-on:click="sortTable(col)">{{col}}</th>
         </tr>
       </thead>
       <tbody>
         <tr v-for="row in rows">
-          <td v-for="col in columns">{{row[col]}}</td>
+          <td   v-for="col in columns">{{row[col]}}</td>
         </tr>
       </tbody>
     </table>
