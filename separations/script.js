@@ -2,7 +2,7 @@
  
 
 var thirdTable = new Vue({
-  el: '#thirdTable',
+  el: '#thirdTable', //element refer to html
   data: {
     rows: [
       { id: 1, name: "Chandler Bing", phone: '305-917-1301', profession: 'IT Manager', denn: 'denbhgr' },
@@ -14,7 +14,7 @@ var thirdTable = new Vue({
     ]
   },
   methods: {
-    "sortTable": function sortTable(col) {
+    "sortTable": function sortTable(col) { 
       this.rows.sort(function(a, b) {
         if (a[col] > b[col]) {
           return 1;
