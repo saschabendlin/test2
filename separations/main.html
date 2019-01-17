@@ -9,12 +9,28 @@
   </head>
 <body>
 
-    <div id="app">
+    <div id="app"  >
       <h1>{{ message }}</h1>
     </div>
     
     
     <table id="thirdTable">
+      <thead>
+        <tr>
+          <th c v-for="col in columns" v-on:click="sortTable(col)">{{col}}</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr v-for="row in rows">
+          <td   v-for="col in columns">{{row[col]}}</td>
+        </tr>
+      </tbody>
+    </table>
+    
+    <br/><hr/><br/>
+
+
+    <table id="thirdTable1">
       <thead>
         <tr>
           <th v-for="col in columns" v-on:click="sortTable(col)">{{col}}</th>
@@ -26,9 +42,13 @@
         </tr>
       </tbody>
     </table>
-    
+
+
+
     
 
-<script src="script.js"></script>
+    <script src="script_1.js"></script>
+    <script src="script.2.js"></script>
 </body>
+
 </html>

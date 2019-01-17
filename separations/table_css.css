@@ -1,4 +1,23 @@
+html,
+body {
+	height: 100%;
+}
 
+body {
+	margin: 0;
+	background: linear-gradient(45deg, #49a09d, #5f2c82);
+	font-family: sans-serif;
+	font-weight: 100;
+}
+
+.container {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+<<<<<<< HEAD
 h1{
   font-size: 30px;
   color: #fff;
@@ -68,6 +87,53 @@ section{
   font-size: 14px;
   position: relative;
   top: 2px;
+=======
+table {
+	width: 800px;
+	border-collapse: collapse;
+	overflow: hidden;
+	box-shadow: 0 0 20px rgba(0,0,0,0.1);
+}
+
+th,
+td {
+	padding: 15px;
+	background-color: rgba(255,255,255,0.2);
+	color: #fff;
+}
+
+th {
+	text-align: left;
+}
+
+thead {
+	th {
+		background-color: #55608f;
+	}
+}
+
+tbody {
+	tr {
+		&:hover {
+			background-color: rgba(255,255,255,0.3);
+		}
+	}
+	td {
+		position: relative;
+		&:hover {
+			&:before {
+				content: "";
+				position: absolute;
+				left: 0;
+				right: 0;
+				top: -9999px;
+				bottom: -9999px;
+				background-color: rgba(255,255,255,0.2);
+				z-index: -1;
+			}
+		}
+	}
+>>>>>>> 5b2e53df2f2a7f3905cee4a6818e98d97c17e614
 }
 .made-with-love a {
   color: #fff;
@@ -80,6 +146,7 @@ section{
 
 /* for custom scrollbar for webkit browser*/
 
+<<<<<<< HEAD
 ::-webkit-scrollbar {
     width: 6px;
 } 
@@ -89,3 +156,7 @@ section{
 ::-webkit-scrollbar-thumb {
     -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
 }
+=======
+
+ 
+>>>>>>> 5b2e53df2f2a7f3905cee4a6818e98d97c17e614
