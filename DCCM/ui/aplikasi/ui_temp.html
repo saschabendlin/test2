@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+
+    <link rel="stylesheet" href="page_css.css">
+
+  </head>
+<body>
+
+    <div id="app"  >
+      <h1>Penukaran Aplikasi</h1>
+    </div>
+    
+    <div>
+        Nama Aplikasi: <input type="text" name="Name" value="Mickey"><br><br><br>
+        Bil Program Online : <input type="text" name="Name" value="Mouse"><br><br>
+        Bil Program Batch : <input type="text" name="Name" value="Mouse"><br><br>
+        Jumlah : <input type="text" name="Name" value="Mouse"><br>
+    </div>
+     
+    
+
+    <div>
+        <h3>Senarai Online Batch</h3>
+    </div>
+
+    
+    <table id="thirdTable">
+      <thead>
+        <tr>
+          <th c v-for="col in columns" v-on:click="sortTable(col)">{{col}}</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr v-for="row in rows">
+          <td   v-for="col in columns">{{row[col]}}</td>
+        </tr>
+      </tbody>
+    </table>
+    
+    <br/><hr/><br/>
+
+    <div>
+        <h3>Senarai Batch Program</h3>
+    </div>
+    
+    <table id="thirdTable1">
+      <thead>
+        <tr>
+          <th v-for="col in columns" v-on:click="sortTable(col)">{{col}}</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr v-for="row in rows">
+          <td v-for="col in columns">{{row[col]}}</td>
+        </tr>
+      </tbody>
+    </table>
+
+
+
+    
+
+    <script src="script.js"></script>
+    <script src="script2.js"></script>
+   
+</body>
+
+</html>
