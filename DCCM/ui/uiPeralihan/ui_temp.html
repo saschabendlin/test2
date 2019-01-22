@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+
+    <link rel="stylesheet" href="page_css.css">
+
+  </head>
+<body>
+
+
+    <div id="app" class="flat-table">
+
+    <div>
+
+      <h1>PERALIHAN</h1>
+    </div>
+
+    <div>
+        <br><br><br><button class="btn default">TAMBAH PERALATAN</button><br><br><br>
+    </div>
+    
+    
+    <table id="thirdTable">
+      <thead>
+        <tr>
+          <th c v-for="col in columns" v-on:click="sortTable(col)">{{col}} </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr v-for="row in rows">
+          <td   v-for="col in columns">{{row[col]}}</td>
+        </tr>
+      </tbody>
+    </table>
+    
+    <br/><br/>
+
+    <script src="script.js"></script>
+    
+</body>
+
+</html>
