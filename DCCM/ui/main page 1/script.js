@@ -5,7 +5,7 @@ var thirdTable = new Vue({
     el: '#thirdTable',
     data: {   
       rows: [
-        { Bil: 1, Dataset: "Chandler Bing", MemberProgram : '305-917-1301', Status: 'IT Manager', Catatan: 'denbhgr',Tambah : 'Baru' },
+        { Bil: 1, Dataset: "Chandler Bing", Member Program : '305-917-1301', Status: 'IT Manager', Catatan: 'denbhgr',Tambah : 'Baru' },
         { Bil: 2, Dataset: "Ross Geller", phone: '210-684-8953', profession: 'Paleontologist' },
         { Bil: 3, Dataset: "Rachel Green", phone: '765-338-0312', profession: 'Waitress'},
         { Bil: 4, Dataset: "Monica Geller", phone: '714-541-3336', profession: 'Head Chef' },
