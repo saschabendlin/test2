@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+
+    <link rel="stylesheet" href="page_css.css">
+
+  </head>
+<body>
+
+    <div id="app"  >
+      <h3>PASUKAN PELAKSANA ( VENDOR ) </h3>
+    </div>
+    
+
+    <div>
+        CARIAN : <input type="text" name="Name" value="Mickey"><br><br>
+        
+    </div>
+         
+     
+
+        <table id="thirdTable">
+      <thead>
+        <tr>
+          <th c v-for="col in columns" v-on:click="sortTable(col)">{{col}}</th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr v-for="row in rows">
+          <td   v-for="col in columns">{{row[col]}}</td>
+          <td> 
+
+              <input type="checkbox" >
+
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    
+    
+
+    
+    
+    
+
+
+
+    
+
+    <script src="script.js"></script>
+   
+   
+</body>
+
+</html>
