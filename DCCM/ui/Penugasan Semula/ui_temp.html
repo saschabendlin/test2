@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+
+    <link rel="stylesheet" href="page_css.css">
+
+    
+
+  </head>
+<body>
+
+    
+    <div id="app"  >
+      <h2>Senarai Penugasan Semula</h2>
+    </div>
+           
+    
+   
+    
+    <table id="thirdTable">
+        <thead>
+          <tr>
+            <th c v-for="col in columns" v-on:click="sortTable(col)">{{col}}</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr v-for="row in rows">
+            <td   v-for="col in columns">{{row[col]}}</td>
+          </tr>
+        </tbody>
+      </table>
+      
+
+    <br>
+    <div> 
+        <button type="button" ">Tambah Penugasan Semula</button>
+
+    </div>
+    
+
+    
+
+    <script src="script.js"></script>
+   
+   
+</body>
+
+</html>
